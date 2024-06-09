@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chọn Kích Thước Giày</title>
+    <style>
+      /* CSS */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      h2 {
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Chọn Kích Thước Giày</h2>
+      <form id="sizeForm">
+        <label for="size">Kích Thước:</label>
+        <select id="size" name="size">
+          <option value="39">Size 39</option>
+          <option value="40">Size 40</option>
+          <option value="41">Size 41</option>
+          <!-- Thêm các tùy chọn kích thước khác tại đây -->
+        </select>
+        <button id="addToCartBtn">Thêm vào Giỏ Hàng</button>
+      </form>
+    </div>
+
+    <script>
+      // JavaScript
+      document
+        .getElementById("addToCartBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Ngăn chặn gửi biểu mẫu
+          var selectedSize = document.getElementById("size").value;
+          alert(
+            "Đã thêm sản phẩm có kích thước " + selectedSize + " vào giỏ hàng!"
+          );
+        });
+    </script>
+  </body>
+</html>
