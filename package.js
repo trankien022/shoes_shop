@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   buttons.forEach((button) => {
     button.addEventListener("click", function () {
       // Redirect to the test.html page
-      window.location.href = "test.html";
+      window.location.href = "sublink.html";
     });
   });
 });
