@@ -3,9 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cửa hàng bán giày chất lượng cao cho nam, nữ và trẻ em."
+    />
+    <meta
+      name="keywords"
+      content="giày, cửa hàng giày, giày nam, giày nữ, giày trẻ em"
+    />
     <title>Cửa hàng bán giày</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="package.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header section with logo and navigation menu -->
@@ -13,100 +24,142 @@
       <div class="logo">
         <img src="img/logo.png" alt="Store Logo" />
       </div>
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul>
           <li><a href="#men">Nam</a></li>
           <li><a href="#women">Nữ</a></li>
           <li><a href="#kids">Trẻ Em</a></li>
-          <li><a href="#sale">Sale</a></li>
         </ul>
       </nav>
     </header>
-
     <!-- Hero section with welcome message -->
     <div class="hero">
       <h1>Chào Mừng Đến Cửa Hàng Giày Của Chúng Tôi</h1>
     </div>
 
-    <!-- Men's products section -->
-    <section class="products-section" id="men">
-      <h2>Sản Phẩm Nam</h2>
-      <div class="products">
-        <div class="product">
-          <img src="img/shoes 1.jpg" alt="Giày 1" />
-          <h3>Giày Thể Thao Nam</h3>
-          <p>1,000,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
+    <main>
+      <!-- Men's products section -->
+      <section class="products-section" id="men">
+        <h2>Sản Phẩm Nam</h2>
+        <div class="products">
+          <div class="product">
+            <img src="img/shoes 1.jpg" alt="Giày Thể Thao Nam" loading="lazy" />
+            <h3>Giày Thể Thao Nam</h3>
+            <p>1,000,000 VND</p>
+            <button onclick="location.href='shoes1.html'">Mua Ngay</button>
+          </div>
+          <div class="product">
+            <img src="img/shoes 2.png" alt="Giày Chạy Bộ Nam" loading="lazy" />
+            <h3>Giày Chạy Bộ Nam</h3>
+            <p>1,200,000 VND</p>
+            <button onclick="location.href='shoes2.html'">Mua Ngay</button>
+          </div>
+          <div class="product">
+            <img src="img/shoes 3.png" alt="Giày Bóng Đá Nam" loading="lazy" />
+            <h3>Giày Bóng Đá Nam</h3>
+            <p>1,500,000 VND</p>
+            <button onclick="location.href='shoes3.html'">Mua Ngay</button>
+          </div>
         </div>
-        <div class="product">
-          <img src="img/shoes 2.png" alt="Giày 2" />
-          <h3>Giày Chạy Bộ Nam</h3>
-          <p>1,200,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
-        </div>
-        <div class="product">
-          <img src="img/shoes 3.png" alt="Giày 3" />
-          <h3>Giày Bóng Đá Nam</h3>
-          <p>1,500,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Women's products section -->
-    <section class="products-section" id="women">
-      <h2>Sản Phẩm Nữ</h2>
-      <div class="products">
-        <div class="product">
-          <img src="img/shoes 4.png" alt="Giày 4" />
-          <h3>Giày Thể Thao Nữ</h3>
-          <p>1,000,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
+      <!-- Women's products section -->
+      <section class="products-section" id="women">
+        <h2>Sản Phẩm Nữ</h2>
+        <div class="products">
+          <div class="product">
+            <img src="img/shoes 4.jpg" alt="Giày Thể Thao Nữ" loading="lazy" />
+            <h3>Giày Thể Thao Nữ</h3>
+            <p>1,000,000 VND</p>
+            <button onclick="location.href='shoes4.html'">Mua Ngay</button>
+          </div>
+          <div class="product">
+            <img src="img/shoes 5.jpg" alt="Giày Chạy Bộ Nữ" loading="lazy" />
+            <h3>Giày Chạy Bộ Nữ</h3>
+            <p>1,200,000 VND</p>
+            <button onclick="location.href='shoes5.html'">Mua Ngay</button>
+          </div>
+          <div class="product">
+            <img src="img/shoes 6.png" alt="Giày Cao Gót Nữ" loading="lazy" />
+            <h3>Giày Cao Gót Nữ</h3>
+            <p>1,500,000 VND</p>
+            <button onclick="location.href='shoes6.html'">Mua Ngay</button>
+          </div>
         </div>
-        <div class="product">
-          <img src="img/shoes 5.png" alt="Giày 5" />
-          <h3>Giày Chạy Bộ Nữ</h3>
-          <p>1,200,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
-        </div>
-        <div class="product">
-          <img src="img/shoes 6.png" alt="Giày 6" />
-          <h3>Giày Cao Gót Nữ</h3>
-          <p>1,500,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Kids' products section -->
-    <section class="products-section" id="kids">
-      <h2>Sản Phẩm Trẻ Em</h2>
-      <div class="products">
-        <div class="product">
-          <img src="img/shoes 7.png" alt="Giày 7" />
-          <h3>Giày Thể Thao Trẻ Em</h3>
-          <p>800,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
+      <!-- Kids' products section -->
+      <section class="products-section" id="kids">
+        <h2>Sản Phẩm Trẻ Em</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              src="img/shoes 7.png"
+              alt="Giày Thể Thao Trẻ Em"
+              loading="lazy"
+            />
+            <h3>Giày Thể Thao Trẻ Em</h3>
+            <p>800,000 VND</p>
+            <button onclick="location.href='shoes7.html'">Mua Ngay</button>
+          </div>
+          <div class="product">
+            <img
+              src="img/shoes 8.png"
+              alt="Giày Chạy Bộ Trẻ Em"
+              loading="lazy"
+            />
+            <h3>Giày Chạy Bộ Trẻ Em</h3>
+            <p>900,000 VND</p>
+            <button onclick="location.href='shoes8.html'">Mua Ngay</button>
+          </div>
+          <div class="product">
+            <img
+              src="img/shoes 9.png"
+              alt="Giày Bóng Đá Trẻ Em"
+              loading="lazy"
+            />
+            <h3>Giày Bóng Đá Trẻ Em</h3>
+            <p>1,000,000 VND</p>
+            <button onclick="location.href='shoes9.html'">Mua Ngay</button>
+          </div>
         </div>
-        <div class="product">
-          <img src="img/shoes 8.png" alt="Giày 8" />
-          <h3>Giày Chạy Bộ Trẻ Em</h3>
-          <p>900,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
-        </div>
-        <div class="product">
-          <img src="img/shoes 9.png" alt="Giày 9" />
-          <h3>Giày Bóng Đá Trẻ Em</h3>
-          <p>1,000,000 VND</p>
-          <button onclick="location.href='sublink.html'">Mua Ngay</button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer section -->
     <footer>
       <p>Cửa hàng giày của nhóm Kiên Thiện Đức.</p>
+      <p>
+        Liên hệ: <a href="mailto:info@cuahanggiay.com">info@cuahanggiay.com</a>
+      </p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61558065606558"
+          ><img src="img/facebook.png" alt="Facebook"
+        /></a>
+        <a
+          href="https://www.bing.com/ck/a?!&&p=3ec3f9030405e07fJmltdHM9MTcxODQ5NjAwMCZpZ3VpZD0wZmI5ZjA1ZS1hZTVkLTY5YjMtMDE2OC1lNDJkYWYzYjY4YjgmaW5zaWQ9NTE5Nw&ptn=3&ver=2&hsh=3&fclid=0fb9f05e-ae5d-69b3-0168-e42daf3b68b8&psq=twiter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1"
+          ><img src="img/twitter.png" alt="Twitter"
+        /></a>
+        <a
+          href="https://www.bing.com/ck/a?!&&p=9e418080710a0404JmltdHM9MTcxODQ5NjAwMCZpZ3VpZD0wZmI5ZjA1ZS1hZTVkLTY5YjMtMDE2OC1lNDJkYWYzYjY4YjgmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=0fb9f05e-ae5d-69b3-0168-e42daf3b68b8&psq=intagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8_aGw9ZW4&ntb=1"
+          ><img src="img/instagram.png" alt="Instagram"
+        /></a>
+      </div>
     </footer>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/666fa8849a809f19fb3e7f57/1i0i2kisu";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>
-<!-- test-->

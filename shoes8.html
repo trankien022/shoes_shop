@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giày Thể Thao Nam</title>
+    <link rel="stylesheet" href="sharecss.css" />
+    <style>
+      /* Bổ sung các quy tắc CSS đặc biệt cho trang sublink này */
+      .product-info {
+        padding: 20px;
+        text-align: center;
+      }
+      .product-info img {
+        max-width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+      }
+      /* Thêm quy tắc cho select box */
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Đặt header giống như trang chính nếu cần thiết -->
+    </header>
+
+    <!-- Nội dung sản phẩm -->
+    <div class="product-info">
+      <img src="img/shoes 8.png" alt="Giày Thể Thao Nam" />
+      <h1>Giày Chạy Bộ Trẻ Em</h1>
+      <p>Giày chạy bộ trẻ em chất lượng cao, phong cách và thoải mái.</p>
+      <p>Giá: 1,500,000 VND</p>
+
+      <!-- Thêm select box cho phép chọn size -->
+      <label for="size">Chọn kích thước:</label>
+      <select id="size">
+        <option value="39">Size 39</option>
+        <option value="40">Size 40</option>
+        <option value="41">Size 41</option>
+        <!-- Thêm các tùy chọn kích thước khác nếu cần -->
+      </select>
+
+      <button onclick="addToCart()">Thêm vào Giỏ Hàng</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Đặt footer giống như trang chính nếu cần thiết -->
+    </footer>
+
+    <!-- Script -->
+    <script src="package.js"></script>
+    <script>
+      function addToCart() {
+        var selectedSize = document.getElementById("size").value;
+        alert(
+          "Đã thêm sản phẩm có kích thước " + selectedSize + " vào giỏ hàng!"
+        );
+      }
+    </script>
+  </body>
+</html>
