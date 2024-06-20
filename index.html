@@ -13,6 +13,7 @@
     />
     <title>Cửa hàng bán giày</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="cart.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -29,12 +30,15 @@
           <li><a href="#men">Nam</a></li>
           <li><a href="#women">Nữ</a></li>
           <li><a href="#kids">Trẻ Em</a></li>
+          <li>
+            <a href="#cart">Giỏ Hàng (<span id="cart-count">0</span></a>
+          </li>
         </ul>
       </nav>
     </header>
     <!-- Hero section with welcome message -->
     <div class="hero">
-      <h1>Chào Mừng Đến Cửa Hàng Giày Của Chúng Tôi</h1>
+      <h1><span class="highlight">Chào Mừng Đến Cửa Hàng Giày Của Chúng Tôi</span></h1>
     </div>
 
     <main>
@@ -125,7 +129,25 @@
         </div>
       </section>
     </main>
-
+ <!-- Cart section -->
+ <section id="cart">
+  <h2>Giỏ hàng</h2>
+  <table>
+      <thead>
+          <tr>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>SL</th>
+              <th>Chọn</th>
+          </tr>
+      </thead>
+      <tbody id="cart-items">
+          <!-- Cart items will be inserted here -->
+      </tbody>
+  </table>
+  <p id="total">Tổng tiền: 0đ</p>
+</section>
+</main>
     <!-- Footer section -->
     <footer>
       <p>Cửa hàng giày của nhóm Kiên Thiện Đức.</p>
@@ -133,15 +155,15 @@
         Liên hệ: <a href="mailto:info@cuahanggiay.com">info@cuahanggiay.com</a>
       </p>
       <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=61558065606558"
+        <a href="https://www.facebook.com/"
           ><img src="img/facebook.png" alt="Facebook"
         /></a>
         <a
-          href="https://www.bing.com/ck/a?!&&p=3ec3f9030405e07fJmltdHM9MTcxODQ5NjAwMCZpZ3VpZD0wZmI5ZjA1ZS1hZTVkLTY5YjMtMDE2OC1lNDJkYWYzYjY4YjgmaW5zaWQ9NTE5Nw&ptn=3&ver=2&hsh=3&fclid=0fb9f05e-ae5d-69b3-0168-e42daf3b68b8&psq=twiter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS8&ntb=1"
+          href="https://www.twiter.com/"
           ><img src="img/twitter.png" alt="Twitter"
         /></a>
         <a
-          href="https://www.bing.com/ck/a?!&&p=9e418080710a0404JmltdHM9MTcxODQ5NjAwMCZpZ3VpZD0wZmI5ZjA1ZS1hZTVkLTY5YjMtMDE2OC1lNDJkYWYzYjY4YjgmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=0fb9f05e-ae5d-69b3-0168-e42daf3b68b8&psq=intagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8_aGw9ZW4&ntb=1"
+          href="https://www.intagram.com/"
           ><img src="img/instagram.png" alt="Instagram"
         /></a>
       </div>

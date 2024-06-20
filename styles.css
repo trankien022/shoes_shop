@@ -34,7 +34,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-weight: 700; /* Sử dụng font-weight để làm nổi bật các liên kết */
+  font-weight: 700; /* Highlighting navigation links */
 }
 
 /* Hero Section Styles */
@@ -53,6 +53,13 @@ nav ul li a {
   color: #fff; /* Improved contrast */
 }
 
+/* Highlight Styles */
+.highlight {
+  font-size: 2em;
+  color: #143d59; /* Highlight text color */
+  background-color: #f4b41a; /* Highlight background color */
+}
+
 /* Products Section Styles */
 .products-section {
   background-color: #fff;
@@ -62,7 +69,7 @@ nav ul li a {
 .products-section h2 {
   text-align: center;
   margin-bottom: 40px;
-  font-weight: 700; /* Sử dụng font-weight để làm nổi bật tiêu đề */
+  font-weight: 700; /* Highlight section titles */
 }
 
 .products {
@@ -80,7 +87,7 @@ nav ul li a {
   padding: 20px;
   width: 300px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
 }
 
 .product:hover {
@@ -98,7 +105,7 @@ nav ul li a {
 .product h3 {
   font-size: 1.5em;
   margin: 10px 0;
-  font-weight: 700; /* Sử dụng font-weight để làm nổi bật tiêu đề sản phẩm */
+  font-weight: 700; /* Highlight product titles */
 }
 
 .product p {
@@ -115,7 +122,7 @@ nav ul li a {
   cursor: pointer;
   border-radius: 5px;
   font-size: 1em;
-  font-weight: 700; /* Sử dụng font-weight để làm nổi bật nút */
+  font-weight: 700; /* Highlight buttons */
 }
 
 .product button:hover {
